@@ -1,0 +1,15 @@
+RestTemplate restTemplate = new RestTemplate();
+		
+		String URL = "https://restcpuntries.eu/rest/v2/name";
+		
+		ResponseEntity<String> response = restTemplate.getForEntity(URL + "/spain", String.class);
+		ResponseEntity<Country[]> response2 = restTemplate.getForEntity(URL + "/spain", Country[].class);
+		
+		System.out.println(response);
+		
+		String strPaises = response.getBody();
+		Country[] arrayPaises = response2.getBody();
+		
+		System.out.println(strPaises);
+		System.out.println(Arrays.toString(arrayPaises));
+		

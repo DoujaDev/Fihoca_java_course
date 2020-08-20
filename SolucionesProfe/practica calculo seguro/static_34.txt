@@ -1,0 +1,36 @@
+@RequestParam(value = "marca") String marca,
+@RequestParam(value="modelo")String modelo,
+@RequestParam(value="color") String color,
+@RequestParam(value="tipo") String tipo, 
+@RequestParam(value="fechaNacimiento")@DateTimeFormat(pattern="dd/MM/yyyy") Date fechaNacimiento,
+@RequestParam(value="fechaCarnet")@DateTimeFormat(pattern="dd/MM/yyyy") Date fechaCarnet
+
+static {
+		
+		modelos.put("SeatIbiza", 3.0);
+		modelos.put("SeatLeon", 5.0);
+		modelos.put("SeatArona", 7.0);
+		
+		modelos.put("AudiA1",7.0);		
+		modelos.put("AudiA2",9.0);
+		modelos.put("AudiA3",11.0);
+		
+		modelos.put("FerrariCalifornia", 15.0);
+		modelos.put("FerrariFF", 18.0);
+		modelos.put("Ferrari612", 23.0);
+		
+		///////////////////////////////////////
+		
+		colores.put("Blanco",0.0);
+		colores.put("Azul",1.0);
+		colores.put("Rojo",2.5);
+		colores.put("Rosa",4.0);
+		colores.put("Negro",6.0);
+		
+		///////////////////////////////////////
+		
+		precioTipo.put("SegundaMano", 4.0);
+		precioTipo.put("Km0", 2.0);
+		precioTipo.put("Nuevo", 1.0);
+		
+	}

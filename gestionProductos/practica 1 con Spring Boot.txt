@@ -1,0 +1,21 @@
+Práctica 1 con Spring Boot
+==========================
+
+Disponemos de las siguientes clases:
+
+- Producto		(POJO de mi modelo)
+- Familia		(POJO de mi modelo)
+- ProductoServices	(Interface de servicios)
+- ProductoServicesImp	(Implementación del interface de servicios)
+
+Hay que incorporar todas las clases en nuestro proyecto HelloWorld de Spring.
+
+Cuando incorporemos las clases (Ctrl+C, Ctrl+V) tendremos que adaptar los packages.
+
+Hemos de crear los siguientes end-points en nuestro controlador:
+
+1.- http://localhost:8080/productos				// devuelve un List<Producto> 		(todos)
+2.- http://localhost:8080/productos/{codigo}			// devuelve el Producto con ese código
+3.- http://localhost:8080/productos/familia/{familia}		// devuelve un List<Producto>		(por familia)
+4.- http://localhost:8080/estadisticas/numeroproductos		// devuelve el nº de productos en un int
+5.- http://localhost:8080/productos/filtrados?min=10&max=1000	// devuelve un List<Produco> 		(entre rango de precios)

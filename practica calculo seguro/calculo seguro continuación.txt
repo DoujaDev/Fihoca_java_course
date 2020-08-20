@@ -1,0 +1,18 @@
+Cálculo del seguro
+==================
+
+Continuación...
+
+
+1.- Incorporamos Swagger en nuestro proyecto
+
+2.- Cuando se pruduzca CUALQUIER error en servidor -> obtener respuesta en JSON con código de error.
+
+
+	{ 
+	   error: "La fecha 13-12-2018 no tiene el formato adecuado"
+	}
+
+3.- Posibilidad de crear vehiculos en el sistema.
+
+4.- Creamos colección de pruebas en Postman

@@ -1,0 +1,19 @@
+	public Multa crear(Multa multa) {
+		
+		int maxCode = 0;
+		for (Integer key: MULTAS.keySet()) {
+			
+			int code = MULTAS.get(key).getCodigo();
+			
+			if (code > maxCode) {
+				maxCode = code;
+			}
+			
+		}
+		
+		multa.setCodigo(++maxCode);
+		
+		MULTAS.put(multa.getCodigo(),multa);
+		
+		return multa;
+	}
